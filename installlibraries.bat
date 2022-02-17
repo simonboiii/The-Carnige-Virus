@@ -1,4 +1,1 @@
-pip install colorama
-pip install os
-pip install random
-pip install threading
+pip install colorama random threading aiofiles
